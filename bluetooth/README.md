@@ -13,14 +13,14 @@ the relationship seems to be a linear decline
 
 connection fell off after about 12.5 meters
 
-5) If you are recording the TX power, when does it change?
+4) If you are recording the TX power, when does it change?
 
 power was not measured
 
-7) Without moving the Raspberry Pi or ground station computer, record the RSSI (and TX power) with each material in between.  Which material has the biggest impact?
+5) Without moving the Raspberry Pi or ground station computer, record the RSSI (and TX power) with each material in between.  Which material has the biggest impact?
 Used: Backpack, liquids, dog cage, steel mesh fence
 steel mesh fence inhibited the transfer the most
 
-8) Record RSSI (and TX power) as you move around with your Pi.  How do walls and other large objects impact the signal?
+6) Record RSSI (and TX power) as you move around with your Pi.  How do walls and other large objects impact the signal?
 
-9) They inhibit the signal
+7) They inhibit the signal
