@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "0b7f9d5f-18d3-455b-8a7d-40554569dd33",
+		"name": "PIImageServer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32063758"
+	},
+	"item": [
+		{
+			"name": "SetResolution",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{ServerIP}}:5000/setResolution?resolution=800*600",
+					"protocol": "http",
+					"host": [
+						"{{ServerIP}}"
+					],
+					"port": "5000",
+					"path": [
+						"setResolution"
+					],
+					"query": [
+						{
+							"key": "resolution",
+							"value": "800*600"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CaptureImage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"location\": {\r\n    \"longitude\": 12.9714,\r\n    \"latitude\": 77.5946\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{ServerIP}}:5000/imageCapture",
+					"protocol": "http",
+					"host": [
+						"{{ServerIP}}"
+					],
+					"port": "5000",
+					"path": [
+						"imageCapture"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateMetadata",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"age\": 30,\r\n  \"city\": \"New York\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{ServerIP}}:5000/updateMetadata?filename=pi2024_01_20_22:44:22_metadata",
+					"protocol": "http",
+					"host": [
+						"{{ServerIP}}"
+					],
+					"port": "5000",
+					"path": [
+						"updateMetadata"
+					],
+					"query": [
+						{
+							"key": "filename",
+							"value": "pi2024_01_20_22:44:22_metadata"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "triggerPredict",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://{{ServerIP}}:5000/predict",
+					"protocol": "http",
+					"host": [
+						"{{ServerIP}}"
+					],
+					"port": "5000",
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListImages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{ServerIP}}:5000/listImages",
+					"protocol": "http",
+					"host": [
+						"{{ServerIP}}"
+					],
+					"port": "5000",
+					"path": [
+						"listImages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListFiles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{ServerIP}}:5000/listFiles",
+					"protocol": "http",
+					"host": [
+						"{{ServerIP}}"
+					],
+					"port": "5000",
+					"path": [
+						"listFiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DownloadImages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{ServerIP}}:5000/downloadImage?filename=pi_2023_12_30_10:26:31.jpg",
+					"protocol": "http",
+					"host": [
+						"{{ServerIP}}"
+					],
+					"port": "5000",
+					"path": [
+						"downloadImage"
+					],
+					"query": [
+						{
+							"key": "filename",
+							"value": "pi_2023_12_30_10:26:31.jpg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetResolution",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{ServerIP}}:5000/getResolution",
+					"protocol": "http",
+					"host": [
+						"{{ServerIP}}"
+					],
+					"port": "5000",
+					"path": [
+						"getResolution"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
